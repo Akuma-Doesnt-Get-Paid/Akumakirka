@@ -61,12 +61,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
 async function updateTime() {
     try {
-        const response = await fetch("https://timeapi.io/api/Time/current/zone?timeZone=Europe/Kiev");
+        const response = await fetch("https://timeapi.io/api/Time/current/zone?timeZone=America/Detroit");
         const data = await response.json();
         const time = new Date(data.dateTime).toLocaleTimeString();
         document.getElementById("time").innerText = time;
     } catch (error) {
-        document.getElementById("time").innerText = "Ошибка загрузки времени";
+        document.getElementById("time").innerText = "derp";
     }
 }
 
