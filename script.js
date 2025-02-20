@@ -66,7 +66,7 @@ async function updateTime() {
         const time = new Date(data.dateTime).toLocaleTimeString();
         document.getElementById("time").innerText = time;
     } catch (error) {
-        document.getElementById("time").innerText = "derp";
+        document.getElementById("time").innerText = "Time api is loading for America-Detroit";
     }
 }
 
