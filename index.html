@@ -28,6 +28,21 @@
     </noscript>
     <script defer src="script.js"></script>
 </head>
+<body>
+    <div id="cam" style="font-size: 50px; cursor: pointer;">🎥</div>
+
+    <audio id="song" src="https://akuma-doesnt-get-paid.github.io/Domshelperbotapi/Daylight.mp3" preload="auto"></audio>
+
+    <script>
+        const cam = document.getElementById('cam');
+        const song = document.getElementById('song');
+
+        cam.addEventListener('click', () => {
+            song.play();  // Play the song when the heart is clicked
+            alert("🎥 :) - Now playing your song!"); // Show a friendly message
+        });
+    </script>
+</body>
 
 <body style="--scroll: 0;">
     
